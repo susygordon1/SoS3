@@ -8,7 +8,7 @@
 <link rel="apple-touch-icon" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--black:#0E0E0C;--black-soft:#181816;--black-card:#1C1C19;--gold:#C8900A;--gold-light:#E8B820;--cream:#F5F0E8;--text-dim:#888070;--text-mid:#555048;--border:#2A2A22;}
+:root{--black:#0E0E0C;--black-soft:#181816;--gold:#C8900A;--gold-light:#E8B820;--cream:#F5F0E8;--text-dim:#888070;--text-mid:#555048;--border:#2A2A22;}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--black);font-family:'Montserrat',sans-serif;color:var(--cream)}
 .nav{background:var(--black);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100;border-bottom:1px solid var(--border)}
@@ -24,36 +24,27 @@ body{background:var(--black);font-family:'Montserrat',sans-serif;color:var(--cre
 .nav-cta{background:var(--gold);color:var(--black);font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:10px 20px;font-weight:700;border:none;cursor:pointer;font-family:'Montserrat',sans-serif;text-decoration:none;display:inline-block}
 .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer}
 .nav-hamburger span{display:block;width:24px;height:2px;background:var(--cream)}
-.mobile-menu{display:none;position:absolute;top:64px;left:0;right:0;background:var(--black);padding:20px;flex-direction:column;gap:0;z-index:99;border-top:1px solid var(--border)}
+.mobile-menu{display:none;position:absolute;top:64px;left:0;right:0;background:var(--black);padding:20px;flex-direction:column;z-index:99;border-top:1px solid var(--border)}
 .mobile-menu.open{display:flex}
 .mobile-menu a{color:var(--text-dim);font-size:11px;letter-spacing:2px;text-decoration:none;text-transform:uppercase;font-weight:600;padding:14px 0;border-bottom:1px solid var(--border)}
 .hero{background:var(--black-soft);padding:64px 40px;text-align:center;border-bottom:2px solid var(--gold)}
 .hero-eyebrow{font-size:10px;letter-spacing:5px;color:var(--gold);text-transform:uppercase;margin-bottom:16px;opacity:0.8}
-.hero-headline{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,6vw,64px);font-weight:700;color:var(--cream);line-height:1.1;margin-bottom:0}
+.hero-headline{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,6vw,64px);font-weight:700;color:var(--cream);line-height:1.1}
 .hero-headline em{color:var(--gold);font-style:italic}
-.content-section{padding:64px 40px;max-width:800px;margin:0 auto}
-.section-eyebrow{font-size:10px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:12px;font-weight:600}
-.section-heading{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,44px);font-weight:700;color:var(--cream);line-height:1.2;margin-bottom:20px}
-.section-heading em{color:var(--gold);font-style:italic}
-.section-body{font-size:15px;color:var(--text-dim);line-height:1.9;margin-bottom:16px}
-.section-body strong{color:var(--cream)}
+.content{padding:64px 40px;max-width:800px;margin:0 auto}
+.eyebrow{font-size:10px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:12px;font-weight:600}
+.heading{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,44px);font-weight:700;color:var(--cream);line-height:1.2;margin-bottom:20px}
+.heading em{color:var(--gold);font-style:italic}
+.body-text{font-size:15px;color:var(--text-dim);line-height:1.9;margin-bottom:16px}
+.body-text strong{color:var(--cream)}
 .gold-rule{height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin:48px 0;opacity:0.3}
-.quote-block{border-left:2px solid var(--gold);padding:20px 28px;margin:32px 0;background:var(--black-soft)}
-.quote-block p{font-family:'Cormorant Garamond',serif;font-size:19px;font-style:italic;color:var(--text-dim);line-height:1.7}
-.btn-gold{background:var(--gold);color:var(--black);border:none;padding:14px 28px;font-size:10px;letter-spacing:2px;text-transform:uppercase;font-family:'Montserrat',sans-serif;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;transition:background 0.2s;margin-right:12px;margin-top:8px}
-.btn-ghost{background:transparent;color:var(--cream);border:1px solid var(--border);padding:14px 28px;font-size:10px;letter-spacing:2px;text-transform:uppercase;font-family:'Montserrat',sans-serif;cursor:pointer;text-decoration:none;display:inline-block;transition:border-color 0.2s;margin-top:8px}
-.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
-.mission-banner{background:var(--black-soft);padding:64px 40px;text-align:center;border-top:1px solid var(--border)}
-.mission-headline{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,4vw,42px);font-weight:700;color:var(--cream);line-height:1.2;margin-bottom:20px}
-.mission-headline em{color:var(--gold);font-style:italic}
-.mission-body{font-size:14px;color:var(--text-dim);max-width:480px;margin:0 auto 32px;line-height:1.9}
 .footer{background:#080807;padding:40px;border-top:2px solid var(--gold)}
-.footer-inner{max-width:800px;margin:0 auto;text-align:center}
-.footer-logo{max-height:48px;width:auto;display:block;margin:0 auto 20px}
-.footer-quote{font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;color:var(--text-dim);margin-bottom:24px;line-height:1.6}
-.footer-bottom{border-top:1px solid var(--border);padding-top:20px;font-size:10px;color:var(--text-mid);letter-spacing:1px;text-transform:uppercase}
+.footer-inner{max-width:680px;margin:0 auto;text-align:center}
+.footer-logo{max-height:48px;width:auto;display:block;margin:0 auto 16px;mix-blend-mode:screen}
+.footer-quote{font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;color:var(--text-dim);margin-bottom:20px;line-height:1.6}
+.footer-bottom{border-top:1px solid var(--border);padding-top:16px;font-size:10px;color:var(--text-mid);letter-spacing:1px;text-transform:uppercase}
 .footer-bottom a{color:var(--gold);text-decoration:none}
-@media(max-width:640px){.nav{padding:0 20px;position:relative}.nav-links,.nav-cta{display:none}.nav-hamburger{display:flex}.hero{padding:48px 20px}.content-section{padding:40px 20px}.mission-banner{padding:48px 20px}.footer{padding:32px 20px}}
+@media(max-width:640px){.nav{padding:0 20px;position:relative}.nav-links,.nav-cta{display:none}.nav-hamburger{display:flex}.hero{padding:48px 20px}.content{padding:40px 20px}.footer{padding:32px 20px}}
 </style>
 </head>
 <body>
@@ -69,9 +60,8 @@ body{background:var(--black);font-family:'Montserrat',sans-serif;color:var(--cre
     <a href="index.html">Home</a>
     <a href="about.html" class="active">About SOS</a>
     <a href="listen.html">Listen</a>
-    <a href="fuel.html">Fuel the Mission</a>
   </div>
-  <a href="fuel.html" class="nav-cta">Fuel the Mission</a>
+  <a href="tel:8178608989" class="nav-cta">Call to Connect</a>
   <div class="nav-hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('open')">
     <span></span><span></span><span></span>
   </div>
@@ -80,7 +70,7 @@ body{background:var(--black);font-family:'Montserrat',sans-serif;color:var(--cre
   <a href="index.html">Home</a>
   <a href="about.html">About SOS</a>
   <a href="listen.html">Listen</a>
-  <a href="fuel.html">Fuel the Mission</a>
+  <a href="tel:8178608989">Call to Connect · 817-860-8989</a>
 </div>
 
 <section class="hero">
@@ -88,48 +78,20 @@ body{background:var(--black);font-family:'Montserrat',sans-serif;color:var(--cre
   <h1 class="hero-headline">Why <em>Seeker of Story</em> Exists</h1>
 </section>
 
-<div class="content-section">
-  <div class="section-eyebrow">Our Mission</div>
-  <h2 class="section-heading">When you're in transition,<br>the blueprint already <em>exists.</em></h2>
-  <p class="section-body">When you're unemployed, burned out, or standing at the edge of a leap — you can't afford high, overrated, astronomical monthly subscriptions. But somewhere out there is a founder who already walked <strong>your exact path</strong> — and is ready to share the blueprint.</p>
-  <p class="section-body">Seeker of Story is the bridge. Free. Permanent. Searchable. Built from the front seat of a car, one honest conversation at a time.</p>
+<div class="content">
+  <div class="eyebrow">Our Mission</div>
+  <h2 class="heading">When you're in transition,<br>the blueprint already <em>exists.</em></h2>
+  <p class="body-text">When you're unemployed, burned out, or standing at the edge of a leap — you can't afford high, overrated, astronomical monthly subscriptions. But somewhere out there is a founder who already walked <strong>your exact path</strong> — and is ready to share the blueprint.</p>
+  <p class="body-text">Seeker of Story is the bridge. Free. Permanent. Searchable. Built from the front seat of a car, one honest conversation at a time.</p>
 
   <div class="gold-rule"></div>
 
-  <div class="section-eyebrow">The Problem We're Solving</div>
-  <h2 class="section-heading">The Blueprint Has Always <em>Existed</em></h2>
-  <p class="section-body">There are people in this world who have already done what you are trying to do. They've made the mistakes. They've found the path. They've built the thing from nothing. And they are willing — even desperate — to share what they know.</p>
-  <p class="section-body">And then there are seekers. People in transition, in burnout, in the wilderness of a career change or a life collapse — spending money they don't have on masterminds, subscriptions, and courses that teach theory instead of testimony.</p>
-  <p class="section-body"><strong>We are not providing motivation. We are providing the map.</strong></p>
-
-  <div class="gold-rule"></div>
-
-  <div class="section-eyebrow">The Library of Scrolls</div>
-  <h2 class="section-heading">A Modern-Day <em>Archive of Testimony</em></h2>
-  <p class="section-body">Every profile on this platform is cataloged as a modern scroll — a living record of transformation. Not a resume. Not a LinkedIn profile. A becoming story. The raw, real, unfiltered account of what it took to get from lost to launched.</p>
-  <p class="section-body">These scrolls are permanent. They are searchable. And they are free — because the person who needs them at their lowest moment should never have to pay to find hope.</p>
-
-  <div class="quote-block">
-    <p>Think of it like 1 Million Cups — but instead of pitching a business, you're sharing your testimony. The room asks questions. The story speaks life. And every word becomes a permanent blueprint for the next seeker who needs it.</p>
-  </div>
-
-  <div class="gold-rule"></div>
-
-  <div class="section-eyebrow">The Vision</div>
-  <h2 class="section-heading">A place to come. Bear witness.<br><em>Receive. Ask questions. Worship.</em></h2>
-  <p class="section-body">This platform is the foundation for a brick-and-mortar testimony space — where anyone can walk through the door, share their story, and find their people. Testimony-driven. Community-funded. Built by obedience. Sustained by story.</p>
-  <div style="margin-top:28px;">
-    <a href="listen.html" class="btn-gold">Find Your Blueprint →</a>
-    <a href="fuel.html" class="btn-ghost">Fuel the Mission →</a>
-  </div>
+  <div class="eyebrow">The Problem We're Solving</div>
+  <h2 class="heading">The Blueprint Has Always <em>Existed</em></h2>
+  <p class="body-text">There are people in this world who have already done what you are trying to do. They've made the mistakes. They've found the path. They've built the thing from nothing. And they are willing — even desperate — to share what they know.</p>
+  <p class="body-text">And then there are seekers. People in transition, in burnout, in the wilderness of a career change or a life collapse — spending money they don't have on masterminds, subscriptions, and courses that teach theory instead of testimony.</p>
+  <p class="body-text"><strong>We are not providing motivation. We are providing the map.</strong></p>
 </div>
-
-<section class="mission-banner">
-  <div class="section-eyebrow" style="margin-bottom:16px;">Keep These Blueprints Free. Always.</div>
-  <h2 class="mission-headline">Seekers receive free.<br>Founders give freely.<br><em>Supporters keep the bridge standing.</em></h2>
-  <p class="mission-body">Seeker of Story runs on The Goodwill Principle. Your gift helps us reach more founders, publish more blueprints, and match more seekers across DFW.</p>
-  <a href="fuel.html" class="btn-gold">Fuel the Mission →</a>
-</section>
 
 <footer class="footer">
   <div class="footer-inner">
